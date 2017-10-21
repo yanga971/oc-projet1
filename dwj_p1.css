@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	margin: 0;
+	font-family: Roboto-Regular,Arial,Serif;	
+}
+
+.bloc_page{
+		
+}
+
+/*la navbar*/
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 90%;
+}
+
+.logo{
+	display: inline-block;
+	height: 40px;
+	padding-left: 110px;
+	padding-top: 15px;
+	margin-left: 30px;	
+}
+
+ul{
+	list-style-type: none;
+	padding-right: 50px;
+	margin-top: 25px;	
+}
+
+li{
+	display: inline;
+	font-size: 14px;
+}
+
+li a{
+	text-decoration: none;
+	margin-right: 20px;
+	margin-top: 10px;
+	color: #5C5C5C;
+}
+
+.active{
+	border-top: 2px solid #4ea5b8;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+
+.banniere{
+	position: relative;
+	margin-top: 5%;
+	width: 100%;
+	height: 400px;	
+}
+
+.slider{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+.banniere h1 {
+	position: absolute;
+	bottom: 50%;
+	left: 10%;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #F0FFF0;
+} 
+
+.titre{
+	color: #4ea5b8;	
+}
+
+.banniere p{
+	position: absolute;
+	bottom: 45%;
+	left: 10%;
+	font-size: 0.8em;
+	color: #F0FFF0;
+}
+
+.banniere .bouton{
+	position: absolute;
+	bottom: 35%;
+	left: 10%;
+	border: 1px solid #35A6FF;
+	border-radius: 2px;
+	padding: 5px 10px;
+	margin-top: 10px;
+	background: #4ea5b8;
+	color: #F0FFF0;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+ .lisere{
+ 	position: absolute;
+ 	bottom: 0%;
+	width: 95px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	border-bottom: 3px solid #4ea5b8;
+}
+
+.chevron{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+}
+
+.chevron.left{
+	left: 0;
+}
+
+.chevron.right{
+	right: 0;	
+}
+
+.fa-angle-left{
+	color: #F0FFF0;
+	height: 20px;
+	width: 0px;
+	border-bottom-right-radius: 40px;
+	border-top-right-radius: 40px;
+	background-color: #444040;
+	padding: 10px;	
+}
+
+.fa-angle-right{
+	color: #F0FFF0;
+	height: 20px;
+	width: 0px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+	background-color: #444040;
+	padding: 10px;	
+}
+
+#nosservices{
+	font-size: 0.8em;
+	margin-top: 4%;
+	line-height: 25px;
+}
+
+.services {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.services h1{
+	font-size: 1.9em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fa-circle{
+	color: #4ea5b8;	
+}
+
+p.cercle{
+	font-size: 0.8em;
+}
+
+.design{
+	display: flex;
+
+}
+
+.image_main{
+	width: 400px;
+	height: 250px;
+	margin: 0 60px 0 60px;
+	
+}
+
+.description{
+	width: 50%;
+	padding-left: 15%;
+}
+
+.ux{
+	position: relative;
+	padding-top: 10%;
+}
+
+.fonts{
+	position: absolute;
+	display: flex;
+	align-items: baseline;
+	margin-top: 5%;
+	left: -10%;
+}
+
+.fonts .cercle{
+	font-size: 0.6em;
+	margin-left: 4px;	
+}
+
+.fa-line-chart{
+	color: #4ea5b8;
+	border:1px solid #E6E6FA;
+	border-radius: 50%;
+	padding: 30%;
+	margin-right: -5%;
+	width:16px;
+	height:12px;	
+}
+
+.ui{
+	padding-top: 10px;
+	position: relative;
+}
+
+ .cubes{
+	position: absolute;
+	display: flex;
+	align-items: baseline;
+	margin-top: 5%;
+	left: -10%;
+}
+
+.cubes .cercle{
+	font-size: 0.6em;
+	margin-left: 4px;
+}
+
+.fa-cubes{
+	color: #4ea5b8;
+	border:1px solid #E6E6FA;
+	border-radius: 50%;
+	padding: 30%;
+	margin-right: -5%;
+	width:16px;
+	height:12px;	
+}
+
+.seo{
+	padding-top: 10px;
+	position: relative;
+}
+
+.pie_chart{
+	position: absolute;
+	display: flex;
+	align-items: baseline;
+	margin-top: 5%;
+	left: -10%;
+}
+
+.pie_chart .cercle{
+	font-size: 0.6em;
+	margin-left: 4px;
+}
+
+.fa-pie-chart{
+	color: #4ea5b8;
+	border:1px solid #E6E6FA;
+	border-radius: 50%;
+	padding: 30%;
+	margin-right: -5%;
+	width: 16px;
+	height: 12px;
+}
+
+#nosprojets{
+	font-size: 0.8em;
+	margin-top: 4%;
+	line-height: 25px;
+}
+
+.projet04{
+	position: relative;
+	display: inline-flex;
+}
+
+.projet04 .cardboard{
+	position:absolute;
+	font-size: 0.7em;
+	bottom: 0;
+	left:0;
+	
+}
+
+.cardboard{
+	line-height:0.6em;
+	color: white;
+	background-color: black;
+	width:120px;
+	height:40px;
+	opacity: 0.6;
+
+}
+
+#nosprojets{
+	font-size: 0.8em;
+	margin-top: 4%;
+	line-height: 25px;
+}
+
+.projets {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.projets h1{
+	font-size: 1.9em;
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+

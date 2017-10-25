@@ -13,11 +13,11 @@
 
 body{
 	margin: 0;
-	font-family: Roboto-Regular,Arial,Serif;	
+	font-family: Roboto-Regular,Arial,Serif;
 }
 
 .bloc_page{
-		
+
 }
 
 /*la navbar*/
@@ -34,13 +34,13 @@ body{
 	height: 40px;
 	padding-left: 110px;
 	padding-top: 15px;
-	margin-left: 30px;	
+	margin-left: 30px;
 }
 
 ul{
 	list-style-type: none;
 	padding-right: 50px;
-	margin-top: 25px;	
+	margin-top: 25px;
 }
 
 li{
@@ -66,7 +66,7 @@ li a{
 	position: relative;
 	margin-top: 5%;
 	width: 100%;
-	height: 400px;	
+	height: 400px;
 }
 
 .slider{
@@ -82,10 +82,10 @@ li a{
 	text-transform: uppercase;
 	font-size: 1.5em;
 	color: #F0FFF0;
-} 
+}
 
 .titre{
-	color: #4ea5b8;	
+	color: #4ea5b8;
 }
 
 .banniere p{
@@ -123,7 +123,7 @@ li a{
 .chevron{
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);	
+	transform: translateY(-50%);
 }
 
 .chevron.left{
@@ -131,7 +131,7 @@ li a{
 }
 
 .chevron.right{
-	right: 0;	
+	right: 0;
 }
 
 .fa-angle-left{
@@ -141,7 +141,7 @@ li a{
 	border-bottom-right-radius: 40px;
 	border-top-right-radius: 40px;
 	background-color: #444040;
-	padding: 10px;	
+	padding: 10px;
 }
 
 .fa-angle-right{
@@ -151,16 +151,19 @@ li a{
 	border-bottom-left-radius: 40px;
 	border-top-left-radius: 40px;
 	background-color: #444040;
-	padding: 10px;	
+	padding: 10px;
 }
 
 #nosservices{
 	font-size: 0.8em;
 	margin-top: 4%;
-	line-height: 25px;
+	line-height: 20px;
+  width: 100%;
+  height:500px;
 }
 
 .services {
+  border:1px solid red;
 	text-align: center;
 	margin-bottom: 5%;
 }
@@ -172,7 +175,7 @@ li a{
 }
 
 .fa-circle{
-	color: #4ea5b8;	
+	color: #4ea5b8;
 }
 
 p.cercle{
@@ -180,110 +183,73 @@ p.cercle{
 }
 
 .design{
+  border:1px solid red;
+  width:50%;
 	display: flex;
-
 }
 
 .image_main{
-	width: 400px;
+	width: 30%;
 	height: 250px;
 	margin: 0 60px 0 60px;
-	
+  border: 1px solid red;
 }
 
 .description{
-	width: 50%;
-	padding-left: 15%;
+  border:1px solid red;
+	width:50%;
+  height: 400px;
+  display:inline;
+  position: absolute;
+  right:0;
+  margin-right: 20px;
 }
 
-.ux{
-	position: relative;
-	padding-top: 10%;
+.detail{
+  border:1px solid green;
+  display: flex;
+  height: 130px;
 }
 
-.fonts{
-	position: absolute;
-	display: flex;
-	align-items: baseline;
-	margin-top: 5%;
-	left: -10%;
+.icons{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4ea5b8;
+  border-radius: 50%;
+  width: 80px;
+  height: 20px;
+  margin-top: 5%;
 }
 
-.fonts .cercle{
-	font-size: 0.6em;
-	margin-left: 4px;	
+.graph{
+  border: 1px solid red;
+  border-radius: 50%;
+  width:25px;
+  height:25px;
+  text-align: center;
+  padding: 5px;
 }
 
-.fa-line-chart{
-	color: #4ea5b8;
-	border:1px solid #E6E6FA;
-	border-radius: 50%;
-	padding: 30%;
-	margin-right: -5%;
-	width:16px;
-	height:12px;	
+ .circle{
+   display: flex;
+   align-items: center;
+	 font-size: 0.6em;
+	 margin-left: -4px;
 }
 
-.ui{
-	padding-top: 10px;
-	position: relative;
-}
-
- .cubes{
-	position: absolute;
-	display: flex;
-	align-items: baseline;
-	margin-top: 5%;
-	left: -10%;
-}
-
-.cubes .cercle{
-	font-size: 0.6em;
-	margin-left: 4px;
-}
-
-.fa-cubes{
-	color: #4ea5b8;
-	border:1px solid #E6E6FA;
-	border-radius: 50%;
-	padding: 30%;
-	margin-right: -5%;
-	width:16px;
-	height:12px;	
-}
-
-.seo{
-	padding-top: 10px;
-	position: relative;
-}
-
-.pie_chart{
-	position: absolute;
-	display: flex;
-	align-items: baseline;
-	margin-top: 5%;
-	left: -10%;
-}
-
-.pie_chart .cercle{
-	font-size: 0.6em;
-	margin-left: 4px;
-}
-
-.fa-pie-chart{
-	color: #4ea5b8;
-	border:1px solid #E6E6FA;
-	border-radius: 50%;
-	padding: 30%;
-	margin-right: -5%;
-	width: 16px;
-	height: 12px;
+.text{
+    border:1px solid red;
+  position: relative;
+  font-size: 1em;
+  width: 100%
 }
 
 #nosprojets{
 	font-size: 0.8em;
 	margin-top: 4%;
-	line-height: 25px;
+	line-height: 20px;
 }
 
 .projet04{
@@ -296,7 +262,6 @@ p.cercle{
 	font-size: 0.7em;
 	bottom: 0;
 	left:0;
-	
 }
 
 .cardboard{
@@ -306,23 +271,17 @@ p.cercle{
 	width:120px;
 	height:40px;
 	opacity: 0.6;
-
 }
 
-#nosprojets{
-	font-size: 0.8em;
-	margin-top: 4%;
-	line-height: 25px;
-}
 
 .projets {
 	text-align: center;
 	margin-bottom: 5%;
+  margin-top: 200px;
 }
 
 .projets h1{
 	font-size: 1.9em;
 	text-transform: uppercase;
-	font-weight: bold;	
+	font-weight: bold;
 }
-

@@ -12,7 +12,8 @@
 }
 
 body{
-	margin: 0;
+	margin: 0px;
+  padding: 0px;
 	font-family: Roboto-Regular,Arial,Serif;
 }
 
@@ -27,27 +28,28 @@ body{
 	position: fixed;
 	top: 0;
 	width: 100%;
+
   background-color: white;
   z-index: 1;
 }
 
 .logo{
 	display: inline-block;
-	height: 40px;
+	height:30px;
 	padding-left: 110px;
-	padding-top: 15px;
+	padding-top: 10px;
 	margin-left: 10px;
 }
 
 #menu{
 	list-style-type: none;
-	margin-top: 25px;
+	margin-top: 20px;
   padding-right: 110px;
 }
 
 li{
 	display: inline;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 #menu a{
@@ -165,20 +167,26 @@ li{
   /*border:1px solid red;*/
 	text-align: center;
 	margin-bottom: 5%;
+  position:relative;
 }
 
 .services h1{
 	font-size: 1.9em;
 	text-transform: uppercase;
 	font-weight: bold;
+  padding-top: 5%;
 }
 
-.fa-circle{
+.services hr{
+  width: 10%;
+}
+
+.services .fa-circle{
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translatex(-50%);
 	color: #4ea5b8;
-}
-
-p.cercle{
-	font-size: 0.8em;
 }
 
 .image_main{
@@ -243,18 +251,36 @@ p.cercle{
 	font-size: 0.8em;
 	margin-top: 10%;
 	line-height: 20px;
+  background-color: #E6E6FA
 }
 
 .projets {
 	text-align: center;
 	margin-bottom: 5%;
   margin-top: 10%;
+  position: relative;
 }
 
 .projets h1{
 	font-size: 1.9em;
 	text-transform: uppercase;
 	font-weight: bold;
+  padding-top: 5%;
+}
+
+.projets hr{
+  width: 10%;
+
+}
+
+.projets .fa-circle{
+  border-radius:50%;
+  border: 3px solid white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #4ea5b8;
 }
 
 .ul_projet {
@@ -263,47 +289,45 @@ p.cercle{
   align-items: center;
 }
 
-.ul_projet a{
-  text-decoration: none;
-  padding: 10px;
-  background-color: #CDC2B3;
-
-}
-
-.menu_projet{
+.ul_projet li{
   position: relative;
 }
 
-.fa-caret-down{
+.ul_projet a{
+  color:black;
+  padding:10px;
+  background-color:#D3D3D3;
+  text-decoration: none;
+}
+
+.ul_projet a:active{
+  color: white;
+  padding: 10px;
+  background-color: #4ea5b8;
+  border-bottom: 2px solid blue;
+}
+
+.ul_projet .fa-caret-down{
   position: absolute;
-  bottom: -70%;
+  bottom: -80%;
+  left: 50%;
+  margin-top: 10px;
+  display:none;
+}
+
+.ul_projet .fa-caret-down:active{
+  position: absolute;
+  bottom: -80%;
   left: 50%;
   margin-top: 10px;
 }
 
-.fa-caret-down p::before{
-  content:'';
-}
-
-/*.fa-caret-down::before{
-  content:"\00af";
-  color:blue;
-
-}*/
-
-/*.fa-caret-down::after{
-  content:"\00af";
-  color:red;
-
-}*/
 
 .portfolio{
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
 }
-
-
 
 .portfolio img{
   position:relative;
@@ -316,15 +340,25 @@ p.cercle{
   position: relative;
 }
 
+.image .active_img{
+  position: absolute;
+  line-height:1.4em;
+  color: white;
+  background-color: rgba(0,0,0,0.6);
+  width:300px;
+  height:50px;
+  bottom:7%;
+  left:-2%;
+}
+
 .image:hover .active_img{
   display: block;
   position: absolute;
   line-height:1.4em;
 	color: white;
-	background-color: black;
+	background-color: rgba(0,0,0,0.6);
 	width:300px;
 	height:50px;
-	opacity: 0.6;
   bottom:7%;
   left:-2%;
 }
@@ -338,6 +372,7 @@ p.cercle{
 
 .active_img h2{
   font-size: 1em;
+  font-weight: bolde;
   line-height: 0.4em;
   margin-left: 5%;
 }
@@ -362,26 +397,66 @@ a .fa-eye {
   background: #1874CD;
 }
 
-.image .active_img{
-  position: absolute;
-  line-height:1.4em;
-  color: white;
-  background-color: black;
-  width:300px;
-  height:50px;
-  opacity: 0.6;
-  bottom:7%;
-  left:-2%;
-}
+
 
 #formulaire{
+width: 99.5%;
+}
 
+.formulaire{
+  position:relative;
 }
 
 .contact{
-  
+  display:inline;
+  position:absolute;
+  left: 70%;
+  top:15%;
+  background-color: #E6E6FA
 }
+
+.contact h1{
+  margin: 5px 0 5px 10px;
+}
+
+.contact address{
+  margin-left: 10px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+address b{
+  font-weight:bold;
+}
+
+form{
+  margin:0 10px 0 10px;
+}
+
+input{
+  width: 250px;
+}
+textarea {
+  width: 250px;
+  height: 100px;
+}
+
+input.button{
+  width:100px;
+  height:25px;
+  border-bottom-color: blue;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 5%;
+  color: white;
+  background-color: #4ea5b8;
+
+}
+
 .carte iframe{
   width:99%;
   height:500px;
+  border-right-width: 10px;
+  margin-top: 50px;
 }

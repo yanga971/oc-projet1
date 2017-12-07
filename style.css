@@ -543,8 +543,8 @@ input.button{
   }
 
   .container {
-    font-size: 0.6em;
-    top: 10%;
+    font-size: 0.5em;
+    top: 5%;
   }
 
   #nosservices{
@@ -552,6 +552,6 @@ input.button{
   }
 
   .contact{
-    left: 30%;
+    left: 10%;
   }
 }

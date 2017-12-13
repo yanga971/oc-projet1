@@ -103,6 +103,7 @@ li {
   position: absolute;
   font-size: 0.9em;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 15%;
 }
@@ -194,18 +195,29 @@ li {
 .graphisme_section {
   position: relative;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .graphisme_section hr {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 5px;
   width: 10%;
 }
 
 .graphisme_section .fa-circle {
   position: absolute;
-  top: 24%;
+  top: 33%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -258,8 +270,14 @@ li {
   border-radius: 50%;
   width: 25px;
   height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 5px;
 }
@@ -299,7 +317,7 @@ li {
 
 .graphisme_section .fa-2x {
   font-size: 1.7em;
-  top: 1%;
+  top: 12%;
   color: white;
 }
 
@@ -533,6 +551,7 @@ input.button {
 
   .contact {
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 
   }
@@ -550,7 +569,7 @@ input.button {
     margin: 20px 100px 0 0;
   }
 
-  #menu{
+  #menu {
     display: none;
   }
 
@@ -568,6 +587,8 @@ input.button {
 
   .contact {
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
+s
